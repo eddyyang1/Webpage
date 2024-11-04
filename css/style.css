@@ -1,0 +1,63 @@
+.grid-container{
+    display: grid;
+    grid-gap: 15px;
+    grid-template-areas:
+     'nd nd nd nd nd nd nd nd'
+     'cd cd vd vd vd vd id id'
+     'scd scd af af af af sd sd'
+     'fd fd fd fd fd fd fd fd'
+    ;
+}
+
+#navbarDiv{
+    grid-area: nd;
+}
+#courseDiv{
+    grid-area: cd;
+}
+#videoDiv{
+   grid-area: vd;
+}
+#imageDiv{
+   grid-area: id;
+}
+#sCourseDiv{
+   grid-area: scd;
+}
+#applicationForm{
+   grid-area: af;
+}
+#someDiv{
+   grid-area: sd;
+}
+#footDiv{
+   grid-area: fd;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 315px;
+}
+.img-container img {
+    max-width: 315px;
+    height: auto;
+}
+
+@media screen and (max-width: 600px) {
+  .grid-container{
+    display: grid;
+      grid-gap: 15px;
+    grid-template-areas:
+     'nd nd nd nd nd nd nd nd'
+     'vd vd vd vd vd vd vd vd'
+     'cd cd cd cd cd cd cd cd'
+     'id id id id id id id id'
+     'scd scd scd scd scd scd scd scd'
+     'af af af af af af af af'
+     'sd sd sd sd sd sd sd sd'
+     'fd fd fd fd fd fd fd fd'
+    ;
+}
+}

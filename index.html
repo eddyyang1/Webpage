@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  meta data of the page : more: title -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emobilis</title>
+    <!--    link to bootstrap -->
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet"/>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="bootstrap/css/bootstrap-grid.css" rel="stylesheet"/>
+    <link href="bootstrap/css/bootstrap-grid.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container-fluid">
+    <!--  CSS GRID : \.-->
+    <!--    parent div -->
+    <div class="grid-container">
+        <div id="navbarDiv">
+<!--          paste in nav  : getbootstrap.com -->
+              <!--             navbar -->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/myimage.png"  alt="logo" width="40" height="40"/>
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="public/team.html">Meet the Team</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Courses
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Python</a></li>
+                                    <li><a class="dropdown-item" href="#">JavaScript</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item" href="#">6 months course</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+
+        <div id="courseDiv">
+<!--            vertical navbar-->
+            <div class="d-flex flex-column p-3">
+                <ul class="nav nav-pills flex-column mb-auto">
+                     <li class="nav-item">
+                                Main Courses
+                     </li>
+                     <li class="nav-item">
+                                <a class="nav-link" href="public/team.html">Python</a>
+                     </li>
+                       <li class="nav-item">
+                                <a class="nav-link" href="https://javascript.com">JavaScript</a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="videoDiv">
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/YmE06eKcC0M?si=XqckmU515BnMNYop" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+
+        <div id="imageDiv" class="img-container">
+                <img src="assets/myimage.png" class="img-thumbnail"  alt="logo">
+        </div>
+
+        <div id="sCourseDiv">
+             <div class="d-flex flex-column p-3">
+                <ul class="nav nav-pills flex-column mb-auto">
+                     <li class="nav-item">
+                                Short Courses
+                     </li>
+                     <li class="nav-item">
+                                <a class="nav-link" href="public/team.html">Cyber Security</a>
+                     </li>
+                       <li class="nav-item">
+                                <a class="nav-link" href="https://javascript.com">Android</a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div id="applicationForm">
+            <h5 style="text-align: center;">Application Form</h5>
+            <form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="course" class="form-label">Select Course of Interest</label>
+    <select class="form-control" id="course">
+        <option value="">Javascript</option>
+        <option value="">Python</option>
+        <option value="">Cyber Security</option>
+        <option value="">Android</option>
+    </select>
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+        </div>
+
+
+        <div id="someDiv">
+               <div class="d-flex flex-column p-3">
+                <ul class="nav nav-pills flex-column mb-auto">
+                     <li class="nav-item">
+                                Campus Locations
+                     </li>
+                     <li class="nav-item">
+                                <a class="nav-link" href="public/team.html">Westlands, Nairobi Kenya</a>
+                     </li>
+                       <li class="nav-item">
+                                <a class="nav-link" href="https://javascript.com">Kipro Center , ABC Avenue</a>
+                     </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="footDiv">
+<!--            bootstrap grid -->
+<!--            1. the grid should be within a div that is given class .container -->
+<!--            2. Each col should be within a div that is given the class .row-->
+            <div class="container">
+                <div class="row">
+<!--                    12 columns which are spannable -->
+<!--                    3 columns : about , socila , contactus-->
+                    <div class="col-md-4">
+<!--                        about section -->
+                        <h5>About Us</h5>
+                        <p>hfdkhfkdhgkdhg dkfhkdhfkdhfkdf kdfhkdhfkd</p>
+                    </div>
+                    <div class="col-md-4">
+<!--                         contact us -->
+                        <h5>Contact us</h5>
+                        <p>Email: info@emobilis.ac.ke</p>
+                        <p>Phone+ : 839578758475</p>
+                        <p>Address : Westlands, Nairobi Kenya</p>
+                    </div>
+                    <div class="col-md-4">
+<!--social media links -->
+                        <h5>Follow us on:</h5>
+                        <p><a href="https://x.com/emobilis">Emobilis</a></p>
+                        <p><a href="https://facebook.com/emobilis">Emobilis Facebook</a></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
